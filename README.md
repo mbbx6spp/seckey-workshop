@@ -8,7 +8,7 @@ attrset:
 
 ```nix
 
-  services.ncscd.enable = true;
+  services.pcscd.enable = true;
 
 ```
 
