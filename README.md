@@ -14,7 +14,7 @@ attrset:
 
 To verify this is running appropriate and reading your card:
 
-1. Put your security key into a USB slow.
+1. Put your security key into a USB slot.
 2. Type `pcsc_scan -n`. (^C to exit.)
 3. Output should show your card's information.
 
@@ -27,7 +27,7 @@ OK
 ```
 
 The above shows version is 1.0.11. This is above the 1.0.9 version
-which as vulnerability for Yubikey NEO.
+which has a vulnerability for Yubikey NEO.
 
 ## Check Nitrokey
 
@@ -158,7 +158,7 @@ take some time. :)
 
 Now you can quit (`Q`) the `passwd` submenu in the `admin` area.
 
-### Generate key
+## Generate key
 
 Still in the `admin` menu you will want to `generate` a new card.
 
@@ -172,5 +172,8 @@ Here you will want to follow the prompts. Pay attention to which PIN it is
 prompting for. You can choose to make an off-card backup if you choose.
 If you do I recommend using a zero knowledge backup solution to store
 a strong passphrase protected off-card backup and revocation cert.
+
+By the end of the `generate` process you should have an exported private
+key and revocation cert output (passphrase protected).
 
 
