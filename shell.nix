@@ -10,6 +10,7 @@ in mkDerivation {
   buildInputs = with pkgs; [
     # for yubikey users
     yubikey-neo-manager
+    ykpers
 
     gnupg
     pcsctools
